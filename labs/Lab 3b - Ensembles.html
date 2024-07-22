@@ -365,7 +365,7 @@ title="Launch on Binder"
       </li>
       
       <li>
-        <a href="https://colab.research.google.com/github/ml-course/master/blob/master/labs/Lab 3b - Ensembles.ipynb"
+        <a href="https://colab.research.google.com/github/ahmed14117/ml_course/blob/master/_sources/labs/Lab 3b - Ensembles.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -803,7 +803,7 @@ Select only the data points with those classes and train a new random forest. Do
 </div>
 <div class="section" id="exercise-7-model-calibration">
 <h2>Exercise 7: Model calibration<a class="headerlink" href="#exercise-7-model-calibration" title="Permalink to this headline">#</a></h2>
-<p>For the trained binary random forest model, plot a calibration curve (see <a class="reference external" href="https://ml-course.github.io/engineer/slides_html/03%20-%20Model%20Selection.slides.html#/40">course notebook</a>).
+<p>For the trained binary random forest model, plot a calibration curve (see <a class="reference external" href="https://ahmed14117.github.io/ml_course/04%20-%20Model%20Selection.slides.html#/41">course notebook</a>).
 Next, try to correct for this using Platt Scaling (or sigmoid scaling).</p>
 <p>Probability calibration should be done on new data not used for model fitting. The class <a class="reference external" href="https://scikit-learn.org/stable/auto_examples/calibration/plot_calibration_curve.html#sphx-glr-auto-examples-calibration-plot-calibration-curve-py">CalibratedClassifierCV</a> uses a cross-validation generator and estimates for each split the model parameter on the train samples and the calibration of the test samples. The probabilities predicted for the folds are then averaged. Already fitted classifiers can be calibrated by CalibratedClassifierCV via the parameter cv=”prefit”. <a class="reference external" href="https://scikit-learn.org/stable/modules/calibration.html">Read more</a></p>
 </div>
