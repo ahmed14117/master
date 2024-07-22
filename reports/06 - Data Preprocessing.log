@@ -20,7 +20,7 @@ nbclient.exceptions.CellExecutionError: An error occurred while executing the fo
 # Auto-setup when running on Google Colab
 import os
 if 'google.colab' in str(get_ipython()) and not os.path.exists('/content/master'):
-    !git clone -q https://github.com/ML-course/master.git /content/master
+    !git clone -q https://github.com/ahmed14117/ml_course.git /content/master
     !pip --quiet install -r /content/master/requirements_colab.txt
     %cd master/notebooks
 
